@@ -1,13 +1,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font: normal normal 13px/16px "Open Sans", sans-serif;
-  background: #dfdfdf;
+  background-color: #dfdfdf;
 }
 
 h2,
@@ -20,8 +16,12 @@ p {
   width: 300px;
   margin: 0 auto;
   margin-top: 40px;
-  background: white;
+  background-color: white;
   border-radius: 5px;}
+
+form {
+  display: inline-block;
+}
 
 input {
   padding: 4px 15px 4px 5px;
@@ -32,7 +32,7 @@ input {
 #button {
   display: inline-block;
   background-color: #caefd1;
-  color: black;
+  color: #ffffff;
   border-radius: 5px;
   text-align: center;
   margin-top: 5px;
@@ -42,7 +42,8 @@ input {
 
 #button:hover {
   cursor: pointer;
-  opacity: 0.8;}
+  opacity: 0.8;
+}
 
 ol {
   padding-left: 20px;
@@ -50,18 +51,18 @@ ol {
 
 ol li {
   padding: 5px;
-  color: black;
+  color: #000;
 }
 
 ol li:nth-child(even) {
-  background: #dfdfdf;
+  background-color: #dfdfdf;
 }
 
 .strike {
   text-decoration: line-through;
 }
 
-li:hover{
+li:hover {
   cursor: pointer;
  }
 
