@@ -1,7 +1,6 @@
 
 function newItem() {
 
-//javascript
 //1. Adding a new item to the list of items:
    let li = $('<li></li>');
    let inputValue = $('#input').val();
@@ -14,15 +13,6 @@ function newItem() {
      $('#input').val('');
    }
 
-// Adding a new item to the list by hitting Enter:
-  $('#input').keypress(function(e) {
-    if (e.which === 13) {
-      e.preventDefault();
-      $('#button').click();
-      $('#input').val('');
-    }
-  });
-
  //2. Crossing out an item from the list of items:
  	li.on('click', function crossOut() {
     li.toggleClass('strike');
@@ -34,6 +24,7 @@ function newItem() {
    	li.append(crossOutButton);
 
  	  crossOutButton.on('click', deleteListItem);
+
  //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
    function deleteListItem() {
  		li.addClass('delete')
@@ -42,3 +33,11 @@ function newItem() {
    $('#list').sortable();
 
 }
+
+// Adding a new item to the list by hitting Enter:
+  $('#input').keypress(function(e) {
+    if (e.which === 13) {
+      e.preventDefault();
+      newItem();
+    }
+  });
