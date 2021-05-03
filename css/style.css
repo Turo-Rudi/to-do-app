@@ -32,7 +32,8 @@ input {
 #button {
   display: inline-block;
   background-color: #caefd1;
-  color: #ffffff;
+  color: #000;
+  font-weight: bold;
   border-radius: 5px;
   text-align: center;
   margin-top: 5px;
